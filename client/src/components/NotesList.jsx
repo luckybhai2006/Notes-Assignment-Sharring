@@ -7,6 +7,7 @@ const NotesList = () => {
   const [search, setSearch] = useState('');
   const [filteredNotes, setFilteredNotes] = useState([]);
 
+    const backendUrl = "https://notes-assignment-sharring-backend.onrender.com"
   useEffect(() => {
     const fetchNotes = async () => {
       try {
@@ -58,7 +59,7 @@ const NotesList = () => {
               <li key={note._id} className="note-cards">
                 <h3 className="note-title">{note.title}</h3>
                 <p className="note-description">{note.description}</p>
-                <a href={note.fileUrl} target="_blank" rel="noopener noreferrer" id="notes-link">
+                <a href={`${backendUrl}/${note.fileUrl}`} target="_blank" rel="noopener noreferrer" id="notes-link">
                   View File
                 </a>
               </li>
