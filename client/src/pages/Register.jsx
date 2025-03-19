@@ -15,7 +15,7 @@ const Register = () => {
     setError(''); // Reset error message
 
     try {
-      await axios.post(`https://notes-assignment-sharring-1.onrender.com/api/auth/register`, { name, email, password });
+      await axios.post(`https://notes-assignment-sharring-backend.onrender.com/api/auth/register`, { name, email, password });
       navigate('/login');
     } catch (err) {
       setError('Registration failed. Please try again.');
