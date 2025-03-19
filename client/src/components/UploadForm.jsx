@@ -30,7 +30,7 @@ const UploadForm = () => {
     console.log("Token being sent:", token);
 
     try {
-      const res = await axios.post(`${process.env.URI}/api/notes/upload`, formData, {
+      const res = await axios.post(`https://notes-assignment-sharring-1.onrender.com/api/notes/upload`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
           Authorization: `Bearer ${token}`,
