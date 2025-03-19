@@ -11,7 +11,7 @@ const NotesList = () => {
     const fetchNotes = async () => {
       try {
         const token = localStorage.getItem('token');  // Get token from localStorage
-        const res = await axios.get(`${process.env.URI}/api/notes`, {
+        const res = await axios.get(`https://notes-assignment-sharring-1.onrender.com/api/notes`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         setNotes(res.data);
