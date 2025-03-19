@@ -1,0 +1,137 @@
+
+ /* Search bar styling */
+#search-bar {
+  width: 80%;
+  max-width: 780px;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #353434;
+  border-radius: 20px;
+  outline: none;
+  margin-bottom: 80px;
+
+  
+}
+ 
+ /* No notes available message */
+ .no-notes {
+   font-size: 1.6rem;
+   color: #474646;
+ }
+ 
+ /* List of notes */
+ .notes-list {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+ }
+ 
+ /* Individual note card */
+.note-card {
+  width: 100%;
+  max-width: 600px; /* Controls width for better centering */
+  padding: 15px;
+  margin: 10px 0; /* Adds spacing between cards */
+  text-align: center; /* Centers text inside cards */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+ /* Note title */
+ .notes-titles{
+  font-size: 40px;
+  font-weight: bold;
+  top: 0;
+  color: #222;
+  font-family:'Courier New', Courier, monospace;
+}
+ 
+ /* Note description */
+ .note-description {
+   font-size: 16px;
+   color: #555;
+   margin: 7px 0;
+   font-family: Arial, sans-serif;
+ }
+ 
+ /* Note link styling */
+ .note-link {
+  display: inline-block;
+  padding: 10px;
+  margin-top: 5px;
+  background-color: #007bff;
+  color: #fff;
+   background-color: black;
+  border-radius: 9px;
+  text-decoration: none;
+}
+ .note-link:hover {
+   background-color: #0056b3;
+ }
+ 
+ /* Edit and Delete buttons */
+ button {
+   padding: 8px 16px;
+   font-size: 15px;
+   border: none;
+   border-radius: 8px;
+   cursor: pointer;
+   margin: 9px;
+   font-weight: 800;
+   color: white;
+ }
+ .but{
+  background-color: green;
+ }
+ /* Green Edit Button */
+ button.edit-button {
+   background-color: #28a745; /* Green color */
+   
+
+ }
+ 
+ button.edit-button:hover {
+   background-color: #218838; /* Darker green on hover */
+   transform: translate(0, -5px);
+   
+ }
+ 
+ /* Red Delete Button */
+ button.delete-button {
+   background-color: #dc3545; /* Red color */
+
+   
+ }
+ 
+ button.delete-button:hover {
+   background-color: #c82333; /* Darker red on hover */
+   transform: translate(0, -5px);
+   
+ }
+ 
+ /* Input and textarea styling when editing */
+ input[type="text"],
+ textarea {
+   width: 100%;
+   padding: 10px;
+   font-size: 16px;
+   margin: 10px 0;
+   border-radius: 4px;
+   border: 1px solid #ccc;
+ }
+ 
+ /* Increased size for textarea when editing */
+ textarea {
+   min-height: 150px;
+ }
+ 
+ /* Button styling when editing */
+ button {
+   padding: 10px 20px;
+   margin: 5px;
+   font-size: 16px;
+ }
+ .set{
+  margin-top: 10px;
+ }

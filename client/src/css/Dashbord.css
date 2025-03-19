@@ -1,0 +1,28 @@
+.dash-btn {
+  background-color: #030404;
+  color: white;
+  width: 30% !important;
+  padding: 12px 25px;
+  border: none;
+  justify-content: center;
+  margin: 0 auto;
+  display: flex;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 29px;
+  font-weight: 900;
+  transition: all 0.3s ease;
+}
+
+
+.dash-btn:hover {
+  background-color: green;
+  transform: scale(1.05);
+}
+.para{
+  font-size: 30px;
+  color: #333;
+  margin-bottom: 50px;
+  font-weight: bold;
+  margin-top: 50px;
+}

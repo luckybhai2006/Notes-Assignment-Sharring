@@ -1,0 +1,105 @@
+body{
+  background-color: aliceblue;
+  align-items: center;
+  justify-content: center;
+}
+.login-containers{
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  display: flex;
+  margin-top: 130px;
+  font-family:Arial, Helvetica, sans-serif;
+  
+}
+/* Login box */
+.login-box {
+  background-color: #d9d8d8;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  text-align: center;
+  
+}
+p{
+  margin-top: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+a{
+  text-decoration: none;
+}
+
+/* Heading */
+h2 {
+  font-size: 40px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 200px;
+}
+
+/* Form fields */
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 17px;
+  margin: 10px 0;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Focus effect on inputs */
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 86, 179, 0.4);
+  /* outline: none; */
+}
+
+/* Submit button */
+
+
+#btn{
+  background-color: #131414;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  font-size: 25px; /* Ensure this is applied */
+  border-radius: 50px;
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+/* Button hover effect */
+#btn:hover {
+  background-color: #00408d;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .login-box {
+    padding: 30px;
+  }
+
+  .login-box h2 {
+    font-size: 22px;
+  }
+
+  input[type="email"],
+  input[type="password"] {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 30px;
+  }
+}

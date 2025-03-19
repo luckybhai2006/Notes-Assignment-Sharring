@@ -1,0 +1,84 @@
+/* UploadForm Styles */
+.upload-form-container {
+   max-width: 500px;
+   margin: 30px auto;
+   padding: 20px;
+   background: aliceblue;
+   border-radius: 8px;
+   box-shadow: 0 0px 10px rgba(0, 0, 0, 0.4);
+   text-align: center;
+ }
+ 
+ .upload-form-title {
+   font-size: 1.9rem;
+   font-weight: bold;
+   margin-bottom: 15px;
+   color: #333;
+   border-bottom: 2px solid #ddd;
+   padding-bottom: 10px;
+ }
+ 
+ .upload-form {
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+ }
+ #title{
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  font-size: larger;
+ }
+ .form-group {
+   text-align: left;
+   padding: 15px;
+   justify-content: center;
+   align-items: center;
+
+ }
+ 
+ .form-group label {
+   font-weight: bold;
+   display: block;
+   font-size: 1.4rem;
+   margin-bottom: 5px;
+   color: #444;
+ }
+ 
+ .form-group input,
+ .form-group textarea {
+   width: 100%;
+   padding: 10px;
+   max-width: 460px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   font-size: 1rem;
+ }
+ 
+ .form-group textarea {
+   min-height: 100px;
+   resize: vertical;
+ }
+ 
+ .upload-button {
+   background: #19191a;
+   color: white;
+   padding: 12px;
+   font-size: 25px;
+   border: none;
+   border-radius: 10px;
+   cursor: pointer;
+   transition: 0.3s ease;
+ }
+ 
+ .upload-button:hover {
+   background: #0056b3;
+ }
+ 
+ /* Responsive Design */
+ @media (max-width: 600px) {
+   .upload-form-container {
+     width: 90%;
+   }
+ }
+ 

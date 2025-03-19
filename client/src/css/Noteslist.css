@@ -1,0 +1,119 @@
+body {
+  background-image: url(https://i.pinimg.com/736x/ec/ca/2a/ecca2a1381c51659228e0f648d2ba682.jpg);
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-size: cover; /* Ensures the image covers the entire body */
+  background-position: center; /* Centers the image */
+  background-attachment: fixed; /* Optional: makes the background fixed during scrolling */
+  height: 100vh; /* Ensures the body takes the full height of the viewport */
+  margin: 0; /* Removes default margin */
+}
+.notes-container {
+   max-width:900px;
+   margin: 10px auto;
+   padding: 30px;
+   /* height: 500px; */
+   /* background: #e8e6e6; */
+   /* border-radius: 10px; */
+   text-align: center;
+   position: relative;
+   top: 30px;
+
+ }
+ 
+ /* Title */
+ .notes-title {
+   font-size: 40px;
+   font-weight: bold;
+   top: 0;
+   color: #222;
+   font-family:'Courier New', Courier, monospace;
+ }
+ 
+ 
+
+#search {
+  width: 80%;
+  max-width: 780px;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #353434;
+  border-radius: 20px;
+  outline: none;
+  margin-bottom: 80px;
+
+  
+}
+
+ .search-bar:focus {
+   border-color: #007bff;
+   outline: none;
+   box-shadow: 0px 0px 8px rgba(0, 123, 255, 0.5);
+ }
+ 
+ /* No Notes */
+ .no-notes {
+   font-size: 16px;
+   color: #777;
+ }
+ 
+
+.notes-list {
+  display: flex;
+  flex-direction: column; /* Ensures items stack vertically */
+  align-items: center; /* Centers items horizontally */
+  justify-content: center; /* Centers items vertically (if needed) */
+  width: 100%;
+  padding: 0;
+  list-style: none; /* Removes default bullets */
+}
+
+.note-cards {
+  
+  width: 100%;
+  max-width: 600px; /* Controls width for better centering */
+  padding: 15px;
+  margin: 10px 0; /* Adds spacing between cards */
+  text-align: center; /* Centers text inside cards */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+ 
+ .note-cards:hover {
+   transform: translateY(-5px);
+ }
+ 
+ /* Note Title */
+ .note-title {
+   font-size: 20px;
+   font-weight: bold;
+   margin-bottom: 5px;
+   color: #333;
+ }
+ 
+ /* Note Description */
+ .note-description {
+   font-size: 10px;
+   /* color: #0c0b0b; */
+   /* margin-bottom: 5px; */
+ }
+ 
+ /* View File Link */
+ #notes-link {
+  display: inline-block;
+  padding: 10px;
+  margin-top: 5px;
+  background-color: #007bff;
+  color: #fff;
+   background-color: black;
+  border-radius: 9px;
+  text-decoration: none;
+}
+ #notes-link:hover {
+   text-decoration: none;
+   background-color: green;
+   color: wheat;
+ }
+ 
