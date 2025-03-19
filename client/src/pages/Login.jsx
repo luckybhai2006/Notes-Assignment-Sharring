@@ -13,7 +13,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post(`https://notes-assignment-sharring-1.onrender.com/api/auth/login`, { email, password });
+      const res = await axios.post(`https://notes-assignment-sharring-backend.onrender.com/api/auth/login`, { email, password });
   
       localStorage.setItem('token', res.data.token);
       localStorage.setItem('userId', res.data.user._id);  // ✅ Store userId in localStorage
