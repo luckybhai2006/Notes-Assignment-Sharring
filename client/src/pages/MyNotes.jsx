@@ -19,7 +19,7 @@ const MyNotes = () => {
         console.log("Stored Token:", token);
         console.log("Stored User ID:", userId);
 
-        const res = await axios.get('https://notes-assignment-sharring-1.onrender.com/api/notes', {
+        const res = await axios.get('https://notes-assignment-sharring-backend.onrender.com/api/notes', {
           headers: { Authorization: `Bearer ${token}` },
         });
 
@@ -61,7 +61,7 @@ const MyNotes = () => {
       const token = localStorage.getItem('token');
       console.log("Deleting Note ID:", id);
       
-      await axios.delete(`https://notes-assignment-sharring-1.onrender.com/api/notes/${id}`, {
+      await axios.delete(`https://notes-assignment-sharring-backend.onrender.com/api/notes/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
 
