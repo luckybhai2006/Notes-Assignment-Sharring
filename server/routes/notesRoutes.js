@@ -38,7 +38,7 @@ router.post('/upload', authMiddleware, upload.single('note'), async (req, res) =
   const newNote = new Note({
     title,
     description,
-    fileUrl: `http://localhost:5000/uploads/${req.file.filename}`,
+    fileUrl: `https://notes-assignment-sharring-backend.onrender.com/uploads/${req.file.filename}`,
     user: req.user.id
   });
   try {
