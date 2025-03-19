@@ -80,7 +80,7 @@ const MyNotes = () => {
       console.log("Updated Title:", editTitle);
       console.log("Updated Description:", editDescription);
 
-      await axios.put(`${process.env.URI}/api/notes/${editingNote}`, {
+      await axios.put(`https://notes-assignment-sharring-backend.onrender.com/api/notes/${editingNote}`, {
         title: editTitle,
         description: editDescription,
       }, {
